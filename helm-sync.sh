@@ -3,8 +3,6 @@ set -ex
 # variables
 URL="https://kubernetes-charts.storage.googleapis.com"
 START_TIME=$(date +%s)
-# change directory
-cd $(dirname $0)
 
 today(){
    date +%F
