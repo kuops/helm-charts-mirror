@@ -2,12 +2,42 @@
 set -ex 
 # variables
 URL="https://kubernetes-charts.storage.googleapis.com"
-
+START_TIME=$(date +%s)
 # change directory
 cd $(dirname $0)
 
 today(){
    date +%F
+}
+
+get_chart(){
+  mkfifo fifofile
+  exec 1000<> fifofile
+
+  rm fifofile
+  seq 1 4 1>& 1000
+
+  while read line;do
+    read -u 1000
+    {
+      CHART_DIGEST=$(cat chart-list.json|jq -r ".|select(.url==\"$line\")|.digest");
+      until [[ ${CHART_DIGEST} == ${DOWN_DIGEST} ]];do \
+        curl -SLo ${line##*/} $line && DOWN_DIGEST=$(md5sum ${line##*/}) \
+      done;
+      echo $line > last_install;
+      CURRENT_TIME=$(date +%s)
+      SPEND_TIME=$[${CURRENT_TIME}-${START_TIME}]
+      if [ $SPEND_TIME -eq 600 ] ;then
+        START_TIME=$(date +%s)
+        git_commit
+      fi
+      echo >& 1000
+    } & 
+  done < /tmp/chart-installed.log
+
+  wait
+  exec 1000>&-
+  exec 1000<&-
 }
 
 set_git(){
@@ -41,15 +71,9 @@ get_digest(){
 
 get_new_tgz_file() {
   grep "${URL}/.*.tgz" index.yaml > /tmp/chart-tgz-list.log
-  ls docs/*.tgz|sed "s@.*@${URL}/&@g" > /tmp/chart-install-tgz.log
+  ls *.tgz|sed "s@.*@${URL}/&@g" > /tmp/chart-install-tgz.log
   awk 'NR==FNR{a[$0];next}NR!=FNR{if(!($0 in a))print $0}' /tmp/chart-install-tgz.log /tmp/chart-install-tgz.log > /tmp/chart-installed.log
-  while read line;do
-    CHART_DIGEST=$(cat chart-list.json|jq -r ".|select(.url==\"$line\")|.digest")
-    until [[ ${CHART_DIGEST} == ${DOWN_DIGEST} ]];do
-      curl -SLo docs/${line##*/} $line && DOWN_DIGEST=$(md5sum ${line##*/})
-    done
-    echo $line > last_install
-  done < /tmp/chart-installed.log
+  get_chart
 }
 
 clean_temp() {
