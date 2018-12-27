@@ -1,5 +1,5 @@
 #!/bin/bash
-set -ex 
+set -ex
 # variables
 URL="https://kubernetes-charts.storage.googleapis.com"
 START_TIME=$(date +%s)
@@ -19,8 +19,8 @@ get_chart(){
     read -u 1000
     {
       CHART_DIGEST=$(cat chart-list.json|jq -r ".|select(.url==\"$line\")|.digest");
-      until [[ ${CHART_DIGEST} == ${DOWN_DIGEST} ]];do \
-        curl -SLo ${line##*/} $line && DOWN_DIGEST=$(md5sum ${line##*/}) \
+      until [[ ${CHART_DIGEST} == ${DOWN_DIGEST} ]];do 
+        curl -SLo ${line##*/} $line && DOWN_DIGEST=$(md5sum ${line##*/}) 
       done;
       echo $line > last_install;
       CURRENT_TIME=$(date +%s)
@@ -30,7 +30,7 @@ get_chart(){
         git_commit
       fi
       echo >& 1000
-    } & 
+    } &
   done < /tmp/chart-installed.log
 
   wait
@@ -87,3 +87,5 @@ main() {
   get_new_tgz_file
   clean_temp
 }
+
+main
