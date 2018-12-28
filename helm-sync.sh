@@ -47,7 +47,6 @@ checkout_branch(){
     git remote set-url origin git@github.com:kuops/helm-charts-mirror.git
     git checkout -b gh-pages
     git fetch --all
-    git branch --set-upstream-to=origin/gh-pages gh-pages
 }
 
 git_commit(){
