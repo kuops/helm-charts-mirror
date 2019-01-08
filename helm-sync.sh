@@ -10,8 +10,6 @@ today(){
 
 download_chart(){
   local CHART_DIGEST=$(cat chart-list.json|jq -r ".|select(.url==\"$line\")|.digest")
-  local CURRENT_TIME=$(date +%s)
-  SPEND_TIME=$[${CURRENT_TIME}-${START_TIME}]
   
   if ls ${line##*/} &> /dev/null;then
     local CURRENT_DIGEST=$(sha256sum ${line##*/}|awk '{print $1}')
@@ -38,6 +36,9 @@ get_chart(){
       download_chart
     } &
     echo >& 1000
+    
+    CURRENT_TIME=$(date +%s)
+    SPEND_TIME=$[${CURRENT_TIME}-${START_TIME}]
     
     if [ $SPEND_TIME -eq 300 ] ;then
       set -x
