@@ -77,7 +77,7 @@ git_commit(){
         git pull
         git add -A
         git commit -m "Synchronizing completion at $TODAY"
-        git push -u origin gh-pages
+        git push -u origin gh-pages -f
      fi
 }
 
