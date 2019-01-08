@@ -1,5 +1,5 @@
 #!/bin/bash
-set -ex
+set -e
 # variables
 URL="https://kubernetes-charts.storage.googleapis.com"
 START_TIME=$(date +%s)
