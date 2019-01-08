@@ -11,7 +11,7 @@ today(){
 download_chart(){
   local CHART_DIGEST=$(cat chart-list.json|jq -r ".|select(.url==\"$line\")|.digest")
   local CURRENT_TIME=$(date +%s)
-  local SPEND_TIME=$[${CURRENT_TIME}-${START_TIME}]
+  SPEND_TIME=$[${CURRENT_TIME}-${START_TIME}]
   
   if ls ${line##*/} &> /dev/null;then
     local CURRENT_DIGEST=$(sha256sum ${line##*/}|awk '{print $1}')
@@ -23,33 +23,31 @@ download_chart(){
   
   echo "${line##*/} update done."
   echo $line > last_install
-  
-  
-  if [ $SPEND_TIME -eq 300 ] ;then
-    set -x
-    START_TIME=$(date +%s)
-    git_commit
-    set +x
-  fi
 }
 
 get_chart(){
-
   mkfifo fifofile
   exec 1000<> fifofile
   rm fifofile
+  
   # 4 processor
   seq 1 4 1>& 1000
-
   while read line;do
     read -u 1000
     {
       download_chart
     } &
     echo >& 1000
+    
+    if [ $SPEND_TIME -eq 300 ] ;then
+      set -x
+      START_TIME=$(date +%s)
+      git_commit
+      set +x
+    fi
   done < /tmp/chart-tgz-list.log
-  
   wait
+
   exec 1000>&-
   exec 1000<&-
 }
