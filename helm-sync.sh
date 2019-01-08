@@ -19,8 +19,8 @@ get_chart(){
     read -u 1000
     {
       CHART_DIGEST=$(cat chart-list.json|jq -r ".|select(.url==\"$line\")|.digest");
-      until [[ ${CHART_DIGEST} == ${DOWN_DIGEST} ]];do 
-        curl -SLo ${line##*/} $line && DOWN_DIGEST=$(md5sum ${line##*/}) 
+      until [[ ${CHART_DIGEST} == ${DOWN_DIGEST} ]];do
+        curl -SLo ${line##*/} $line && DOWN_DIGEST=$(md5sum ${line##*/})
       done;
       echo $line > last_install;
       CURRENT_TIME=$(date +%s)
@@ -31,7 +31,7 @@ get_chart(){
       fi
       echo >& 1000
     } &
-  done < /tmp/chart-installed.log
+  done < /tmp/chart-tgz-list.log
 
   wait
   exec 1000>&-
@@ -45,8 +45,13 @@ set_git(){
 
 checkout_branch(){
     git remote set-url origin git@github.com:kuops/helm-charts-mirror.git
-    git checkout -b gh-pages
-    git fetch --all
+    if git branch -a|grep 'gh-pages' &> /dev/null;then
+      git fetch --all
+      git checkout gh-pages
+    else
+      git fetch --all
+      git checkout -b gh-pages
+    fi
 }
 
 git_commit(){
@@ -66,12 +71,11 @@ get_new_index() {
 get_digest(){
   cat index.yaml |yq .|jq '.entries| .[]' > index.json
   cat  index.json |jq '.|.[]| {name: .name,version: .version,digest: .digest,url: .urls[]}' > chart-list.json
+  rm index.json
 }
 
 get_new_tgz_file() {
-  grep "${URL}/.*.tgz" index.yaml > /tmp/chart-tgz-list.log
-  ls *.tgz|sed "s@.*@${URL}/&@g" > /tmp/chart-install-tgz.log
-  awk 'NR==FNR{a[$0];next}NR!=FNR{if(!($0 in a))print $0}' /tmp/chart-install-tgz.log /tmp/chart-install-tgz.log > /tmp/chart-installed.log
+  grep -o "${URL}/.*.tgz" index.yaml > /tmp/chart-tgz-list.log
   get_chart
 }
 
