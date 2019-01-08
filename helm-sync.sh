@@ -18,8 +18,9 @@ download_chart(){
   fi
 
   until [[ ${CHART_DIGEST} == ${CURRENT_DIGEST} ]];do
-    curl -SLo ${line##*/} $line && local CURRENT_DIGEST=$(md5sum ${line##*/})
+    curl -sSLo ${line##*/} $line && local CURRENT_DIGEST=$(md5sum ${line##*/})
   done
+  echo "${line##*/} update done."
 
   echo $line > last_install
 
