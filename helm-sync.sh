@@ -73,6 +73,7 @@ git_commit(){
      local COMMIT_FILES_COUNT=$(git status -s|wc -l)
      local TODAY=$(today)
      if [ $COMMIT_FILES_COUNT -ne 0 ];then
+     
         git add -A
         git commit -m "Synchronizing completion at $TODAY"
         git push -u origin gh-pages
