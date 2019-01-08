@@ -8,6 +8,28 @@ today(){
    date +%F
 }
 
+download_chart(){
+  local CHART_DIGEST=$(cat chart-list.json|jq -r ".|select(.url==\"$line\")|.digest")
+  local CURRENT_TIME=$(date +%s)
+  local SPEND_TIME=$[${CURRENT_TIME}-${START_TIME}]
+
+  if ls ${line##*/} &> /dev/null;then
+    local CURRENT_DIGEST=$(md5sum ${line##*/})
+  fi
+
+  until [[ ${CHART_DIGEST} == ${CURRENT_DIGEST} ]];do
+    curl -SLo ${line##*/} $line && local CURRENT_DIGEST=$(md5sum ${line##*/})
+  done
+
+  echo $line > last_install
+
+  if [ $SPEND_TIME -eq 600 ] ;then
+    START_TIME=$(date +%s)
+    git_commit
+  fi
+
+}
+
 get_chart(){
   mkfifo fifofile
   exec 1000<> fifofile
@@ -18,17 +40,7 @@ get_chart(){
   while read line;do
     read -u 1000
     {
-      CHART_DIGEST=$(cat chart-list.json|jq -r ".|select(.url==\"$line\")|.digest");
-      until [[ ${CHART_DIGEST} == ${DOWN_DIGEST} ]];do
-        curl -SLo ${line##*/} $line && DOWN_DIGEST=$(md5sum ${line##*/})
-      done;
-      echo $line > last_install;
-      CURRENT_TIME=$(date +%s)
-      SPEND_TIME=$[${CURRENT_TIME}-${START_TIME}]
-      if [ $SPEND_TIME -eq 600 ] ;then
-        START_TIME=$(date +%s)
-        git_commit
-      fi
+      download_chart;
       echo >& 1000
     } &
   done < /tmp/chart-tgz-list.log
