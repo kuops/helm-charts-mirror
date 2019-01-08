@@ -41,11 +41,11 @@ get_chart(){
   while read line;do
     read -u 1000
     {
-      download_chart;
-      echo >& 1000
+      download_chart
     } &
+    echo >& 1000
   done < /tmp/chart-tgz-list.log
-
+  
   wait
   exec 1000>&-
   exec 1000<&-
