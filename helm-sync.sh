@@ -64,7 +64,8 @@ get_new_index() {
 }
 
 get_digest(){
-  cat index.yaml |yq '.entries[]| {name: .[].name, digest: .[].digest, version: .[].version , url: .[].urls[]}' > chart-list.json
+  cat index.yaml |yq .|jq '.entries| .[]' > index.json
+  cat  index.json |jq '.|.[]| {name: .name,version: .version,digest: .digest,url: .urls[]}' > chart-list.json
 }
 
 get_new_tgz_file() {
