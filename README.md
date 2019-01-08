@@ -1,4 +1,4 @@
-# helm-mirror
+# helm-charts-mirror
 
 [![Build Status](https://travis-ci.com/kuops/helm-charts-mirror.svg?branch=master)](https://travis-ci.com/kuops/helm-charts-mirror)
 
