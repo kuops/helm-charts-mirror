@@ -9,11 +9,9 @@ today(){
 }
 
 download_chart(){
-  #set -x
   local CHART_DIGEST=$(cat chart-list.json|jq -r ".|select(.url==\"$line\")|.digest")
   local CURRENT_TIME=$(date +%s)
   local SPEND_TIME=$[${CURRENT_TIME}-${START_TIME}]
-  echo "current spend_time is $SPEND_TIME"
   
   if ls ${line##*/} &> /dev/null;then
     local CURRENT_DIGEST=$(sha256sum ${line##*/}|awk '{print $1}')
@@ -21,16 +19,18 @@ download_chart(){
 
   until [[ ${CHART_DIGEST} == ${CURRENT_DIGEST} ]];do
     curl -sSLo ${line##*/} $line && local CURRENT_DIGEST=$(sha256sum ${line##*/}|awk '{print $1}')
-    echo "${line##*/} update done."
   done
-
+  
+  echo "${line##*/} update done."
   echo $line > last_install
   
-  if [ $SPEND_TIME -eq 600 ] ;then
+  
+  if [ $SPEND_TIME -eq 300 ] ;then
+    set -x
     START_TIME=$(date +%s)
     git_commit
+    set +x
   fi
-  #set +x
 }
 
 get_chart(){
