@@ -15,11 +15,11 @@ download_chart(){
   local SPEND_TIME=$[${CURRENT_TIME}-${START_TIME}]
 
   if ls ${line##*/} &> /dev/null;then
-    local CURRENT_DIGEST=$(md5sum ${line##*/})
+    local CURRENT_DIGEST=$(sha256sum ${line##*/}|awk '{print $1}')
   fi
 
   until [[ ${CHART_DIGEST} == ${CURRENT_DIGEST} ]];do
-    curl -sSLo ${line##*/} $line && local CURRENT_DIGEST=$(md5sum ${line##*/})
+    curl -sSLo ${line##*/} $line && local CURRENT_DIGEST=$(sha256sum ${line##*/}|awk '{print $1}')
   done
   echo "${line##*/} update done."
 
