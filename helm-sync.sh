@@ -29,6 +29,7 @@ download_chart(){
   
   if [ $FLAG -eq 1 ];then
     log "${line##*/} update done."
+    unset FLAG
   fi
   
   echo $line > last_install
