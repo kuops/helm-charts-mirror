@@ -15,7 +15,7 @@ log(){
 }
 
 download_chart(){
-  set -x
+  #set -x
   local CHART_DIGEST=$(cat chart-list.json|jq -r ".|select(.url==\"$line\")|.digest")
   local CURRENT_TIME=$(date +%s)
   local SPEND_TIME=$[${CURRENT_TIME}-${START_TIME}]
@@ -45,7 +45,7 @@ download_chart(){
   if [ $COMMIT_INTERVAL -eq 0 ] ;then
     git_commit
   fi
-  set +x
+  #set +x
 }
 
 get_chart(){
