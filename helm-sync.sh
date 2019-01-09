@@ -3,6 +3,7 @@ set -e
 # variables
 URL="https://kubernetes-charts.storage.googleapis.com"
 START_TIME=$(date +%s)
+FLAG=0
 
 today(){
    date +%F
@@ -32,7 +33,7 @@ download_chart(){
   
   if [ $FLAG -eq 1 ];then
     log "${line##*/} update done."
-    unset FLAG
+    FLAG=0
   fi
   
   echo $line > last_install
