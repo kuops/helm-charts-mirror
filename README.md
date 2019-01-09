@@ -4,6 +4,13 @@
 
 使用 github pages 做了一个 charts 仓库的镜像，由于默认的 https://kubernetes-charts.storage.googleapis.com/ 容易被墙 ， 每天更新一次
 
+
+拉取该仓库 master 分支
+
+```
+git clone git@github.com:kuops/helm-charts-mirror.git --branch=master --single-branch
+```
+
 用法
 
 ```
