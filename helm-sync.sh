@@ -75,14 +75,14 @@ set_git(){
 checkout_branch(){
     git remote rm origin
     git remote add origin git@github.com:kuops/helm-charts-mirror.git
-    git pull
+    git fetch --all
     if git branch -a|grep 'gh-pages' &> /dev/null;then
       git checkout gh-pages
-      git fetch --all
+      git pull
       git branch --set-upstream-to=origin/gh-pages gh-pages
     else
       git checkout -b gh-pages
-      git fetch --all
+      git pull
     fi
 }
 
