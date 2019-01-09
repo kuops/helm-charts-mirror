@@ -15,17 +15,34 @@ log(){
 
 download_chart(){
   local CHART_DIGEST=$(cat chart-list.json|jq -r ".|select(.url==\"$line\")|.digest")
-  
+  local CURRENT_TIME=$(date +%s)
+  SPEND_TIME=$[${CURRENT_TIME}-${START_TIME}]
+  TIME_INTERVAL=$[SPEND_TIME%10]
   if ls ${line##*/} &> /dev/null;then
     local CURRENT_DIGEST=$(sha256sum ${line##*/}|awk '{print $1}')
   fi
 
   until [[ ${CHART_DIGEST} == ${CURRENT_DIGEST} ]];do
     curl -sSLo ${line##*/} $line && local CURRENT_DIGEST=$(sha256sum ${line##*/}|awk '{print $1}')
+    FLAG=1
   done
   
-  log "${line##*/} update done."
+  if [ $FLAG -eq 1 ];then
+    log "${line##*/} update done."
+  fi
+  
   echo $line > last_install
+  
+  if [ $TIME_INTERVAL -eq 0 ];then
+    log "spend time is: $SPEND_TIME"
+  fi
+  
+  if [ $SPEND_TIME -eq 300 ] ;then
+      #set -x
+      START_TIME=$(date +%s)
+      git_commit
+      #set +x
+    fi
 }
 
 get_chart(){
@@ -39,18 +56,8 @@ get_chart(){
     read -u 1000
     {
       download_chart
+      echo >& 1000
     } &
-    echo >& 1000
-    
-    CURRENT_TIME=$(date +%s)
-    SPEND_TIME=$[${CURRENT_TIME}-${START_TIME}]
-    log "spend time is: $SPEND_TIME"
-    if [ $SPEND_TIME -eq 300 ] ;then
-      #set -x
-      START_TIME=$(date +%s)
-      git_commit
-      #set +x
-    fi
   done < /tmp/chart-tgz-list.log
   wait
 
