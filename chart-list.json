@@ -103,7 +103,7 @@
 {
   "name": "airflow",
   "version": "0.12.0",
-  "digest": "fbd02be3347e539c2e67303248f4dedd18e8fc4f2cbaca7ee5cae5a99a7e2d56",
+  "digest": "ee99477105a3eb2908f824f8d0ebdd780f57079345d85f570869f7fa7172996c",
   "url": "https://kubernetes-charts.storage.googleapis.com/airflow-0.12.0.tgz"
 }
 {
@@ -1231,7 +1231,7 @@
 {
   "name": "cloudserver",
   "version": "1.0.0",
-  "digest": "f01b5b8283a2170ed7d9fae4c2edb4e3ba4db1912a28da6a4ece0264be4994c1",
+  "digest": "ad93c826c0efcc7b0b6cb610d9d24bfd4cd6cc362aa7a0ae5f0195390933a8da",
   "url": "https://kubernetes-charts.storage.googleapis.com/cloudserver-1.0.0.tgz"
 }
 {
@@ -4213,7 +4213,7 @@
 {
   "name": "elastic-stack",
   "version": "1.2.0",
-  "digest": "f9ab9d1faafd2ae8d74d1a4179ee44505c197f67f61265ac053e6229d1949d48",
+  "digest": "629bb929310e7677df203ae8160ec0520ee96e9cb0e1d26b78d22b6f35846bcc",
   "url": "https://kubernetes-charts.storage.googleapis.com/elastic-stack-1.2.0.tgz"
 }
 {
@@ -7819,7 +7819,7 @@
 {
   "name": "hlf-ca",
   "version": "1.1.4",
-  "digest": "418b08aeb36321e5e75bc8e1261d3afb7f2d557ac2d74c0ac6dec55f7486835c",
+  "digest": "bfd933e97b11caaf3cdfdad27083dc47afa1cb4a1fe03aa644ecac5fa6bbfe0f",
   "url": "https://kubernetes-charts.storage.googleapis.com/hlf-ca-1.1.4.tgz"
 }
 {
@@ -8353,7 +8353,7 @@
 {
   "name": "janusgraph",
   "version": "0.2.0",
-  "digest": "e98f81b3057add4e38ebb4130eec5a79019c5b1ad1125e733c9588270f3ab19f",
+  "digest": "b2a6058b6dc4d998505a7b518a5368bdd0acbb01dba16b8c3dc5ca5c22fc838b",
   "url": "https://kubernetes-charts.storage.googleapis.com/janusgraph-0.2.0.tgz"
 }
 {
@@ -10651,7 +10651,7 @@
 {
   "name": "kube-ops-view",
   "version": "0.7.0",
-  "digest": "e1281db12b11ba38983384267bac95056e1bc596d67e856ceb0548f45dd88a99",
+  "digest": "ffec9fd0a70c8f79077638f717ae75d684ca011cca85be68b0b2e7b31a738296",
   "url": "https://kubernetes-charts.storage.googleapis.com/kube-ops-view-0.7.0.tgz"
 }
 {
@@ -13807,7 +13807,7 @@
 {
   "name": "mission-control",
   "version": "0.4.3",
-  "digest": "ae6aeb5b7037797a4bfcb45afc05e3d1ccdcbf73484cd2ab9b3a6d71cd48ed82",
+  "digest": "0e582c4aa3841299cd6e0d7429a079cbd99040d13556d9019cdca0b83e1d59c2",
   "url": "https://kubernetes-charts.storage.googleapis.com/mission-control-0.4.3.tgz"
 }
 {
@@ -24979,7 +24979,7 @@
 {
   "name": "sentry",
   "version": "1.0.0",
-  "digest": "77452cabccc23b34507e89b04d5b3ba1a8dd31434953dd034368b66e0e0a5a5c",
+  "digest": "33feef5d0f157e32b153f2f29fc3634c2eaad23a5e6d10c0ea87c6e57b15fa81",
   "url": "https://kubernetes-charts.storage.googleapis.com/sentry-1.0.0.tgz"
 }
 {
@@ -28921,7 +28921,7 @@
 {
   "name": "xray",
   "version": "0.4.2",
-  "digest": "7ce7b64e15056bd22a3e43c47861d3ec596eba2c6e8bbb01c351dd81c10faf9a",
+  "digest": "a18ca0d9c8644b5c704510afeed828e3f68dd459da43948192f5547fa5ce7052",
   "url": "https://kubernetes-charts.storage.googleapis.com/xray-0.4.2.tgz"
 }
 {
