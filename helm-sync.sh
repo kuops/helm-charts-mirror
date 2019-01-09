@@ -14,6 +14,7 @@ log(){
 }
 
 download_chart(){
+  set -x
   local CHART_DIGEST=$(cat chart-list.json|jq -r ".|select(.url==\"$line\")|.digest")
   local CURRENT_TIME=$(date +%s)
   local SPEND_TIME=$[${CURRENT_TIME}-${START_TIME}]
@@ -43,6 +44,7 @@ download_chart(){
   if [ $COMMIT_INTERVAL -eq 0 ] ;then
     git_commit
   fi
+  set +x
 }
 
 get_chart(){
@@ -71,7 +73,9 @@ set_git(){
 }
 
 checkout_branch(){
-    git remote set-url origin git@github.com:kuops/helm-charts-mirror.git
+    git remote rm origin
+    git remote add origin git@github.com:kuops/helm-charts-mirror.git
+    git pull
     if git branch -a|grep 'gh-pages' &> /dev/null;then
       git checkout gh-pages
       git fetch --all
@@ -89,7 +93,7 @@ git_commit(){
         git pull
         git add -A
         git commit -m "Synchronizing completion at $TODAY"
-        git push -u origin gh-pages -f
+        git push -u origin gh-pages
      fi
 }
 
