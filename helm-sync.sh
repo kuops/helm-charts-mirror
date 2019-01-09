@@ -16,8 +16,10 @@ log(){
 download_chart(){
   local CHART_DIGEST=$(cat chart-list.json|jq -r ".|select(.url==\"$line\")|.digest")
   local CURRENT_TIME=$(date +%s)
-  SPEND_TIME=$[${CURRENT_TIME}-${START_TIME}]
-  TIME_INTERVAL=$[SPEND_TIME%10]
+  local SPEND_TIME=$[${CURRENT_TIME}-${START_TIME}]
+  local TIME_INTERVAL=$[${SPEND_TIME}%10]
+  local COMMIT_INTERVAL=$[${SPEND_TIME}%300]
+  
   if ls ${line##*/} &> /dev/null;then
     local CURRENT_DIGEST=$(sha256sum ${line##*/}|awk '{print $1}')
   fi
@@ -38,12 +40,9 @@ download_chart(){
     log "spend time is: $SPEND_TIME"
   fi
   
-  if [ $SPEND_TIME -eq 300 ] ;then
-      #set -x
-      START_TIME=$(date +%s)
-      git_commit
-      #set +x
-    fi
+  if [ $COMMIT_INTERVAL -eq 0 ] ;then
+    git_commit
+  fi
 }
 
 get_chart(){
