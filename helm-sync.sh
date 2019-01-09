@@ -8,6 +8,11 @@ today(){
    date +%F
 }
 
+log(){
+  echo -n "[$(date +'%F %H:%M:%S')] "
+  echo $@
+}
+
 download_chart(){
   local CHART_DIGEST=$(cat chart-list.json|jq -r ".|select(.url==\"$line\")|.digest")
   
@@ -19,7 +24,7 @@ download_chart(){
     curl -sSLo ${line##*/} $line && local CURRENT_DIGEST=$(sha256sum ${line##*/}|awk '{print $1}')
   done
   
-  echo "${line##*/} update done."
+  log "${line##*/} update done."
   echo $line > last_install
 }
 
@@ -39,12 +44,12 @@ get_chart(){
     
     CURRENT_TIME=$(date +%s)
     SPEND_TIME=$[${CURRENT_TIME}-${START_TIME}]
-    
+    log "spend time is: $SPEND_TIME"
     if [ $SPEND_TIME -eq 300 ] ;then
-      set -x
+      #set -x
       START_TIME=$(date +%s)
       git_commit
-      set +x
+      #set +x
     fi
   done < /tmp/chart-tgz-list.log
   wait
