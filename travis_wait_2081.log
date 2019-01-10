@@ -504,3 +504,55 @@ an editor opened by 'git commit'. Please make sure all processes
 are terminated then try again. If it still fails, a git process
 may have crashed in this repository earlier:
 remove the file manually to continue.
+[gh-pages deadc2b] Synchronizing completion at 2019-01-10
+ 25 files changed, 953 insertions(+), 273 deletions(-)
+ rewrite airflow-0.12.0.tgz (99%)
+ rewrite cloudserver-1.0.0.tgz (99%)
+ rewrite distribution-0.4.2.tgz (99%)
+ rewrite elastic-stack-1.2.0.tgz (99%)
+ create mode 100644 elastic-stack-1.3.0.tgz
+ create mode 100644 elasticsearch-1.17.0.tgz
+ rewrite hlf-ca-1.1.4.tgz (99%)
+ rewrite janusgraph-0.2.0.tgz (99%)
+ rewrite kong-0.7.3.tgz (99%)
+ create mode 100644 kong-0.8.0.tgz
+ create mode 100644 kong-0.9.0.tgz
+ rewrite kube-ops-view-0.7.0.tgz (84%)
+ create mode 100644 kubernetes-dashboard-1.1.0.tgz
+ create mode 100644 kured-1.1.0.tgz
+ rewrite mission-control-0.4.3.tgz (99%)
+ create mode 100644 mysqldump-2.0.2.tgz
+ create mode 100644 opencart-4.0.3.tgz
+ create mode 100644 prometheus-rabbitmq-exporter-0.3.0.tgz
+ create mode 100644 redis-5.2.0.tgz
+ rewrite sentry-1.0.0.tgz (99%)
+ create mode 100644 travis_wait_2081.log
+To github.com:kuops/helm-charts-mirror.git
+   cf0cfd0..deadc2b  gh-pages -> gh-pages
+Branch 'gh-pages' set up to track remote branch 'gh-pages' from 'origin'.
+[2019-01-10 08:02:53] spend time is: 310
+[2019-01-10 08:02:53] spend time is: 310
+[2019-01-10 08:02:53] spend time is: 310
+[2019-01-10 08:02:53] spend time is: 310
+[2019-01-10 08:02:53] spend time is: 310
+[2019-01-10 08:02:53] spend time is: 310
+[2019-01-10 08:02:53] spend time is: 310
+[2019-01-10 08:02:53] spend time is: 310
+[2019-01-10 08:02:53] spend time is: 310
+[2019-01-10 08:02:53] spend time is: 310
+[2019-01-10 08:02:53] spend time is: 310
+[2019-01-10 08:02:53] spend time is: 310
+[2019-01-10 08:03:03] spend time is: 320
+[2019-01-10 08:03:03] spend time is: 320
+[2019-01-10 08:03:03] spend time is: 320
+[2019-01-10 08:03:03] spend time is: 320
+[2019-01-10 08:03:03] spend time is: 320
+[2019-01-10 08:03:03] spend time is: 320
+[2019-01-10 08:03:03] spend time is: 320
+[2019-01-10 08:03:03] spend time is: 320
+[2019-01-10 08:03:03] spend time is: 320
+[2019-01-10 08:03:03] spend time is: 320
+[2019-01-10 08:03:03] spend time is: 320
+[2019-01-10 08:03:03] spend time is: 320
+Warning: Permanently added the RSA host key for IP address '192.30.253.112' to the list of known hosts.
+Already up to date.
