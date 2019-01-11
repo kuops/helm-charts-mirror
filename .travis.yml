@@ -19,5 +19,5 @@ install:
   - pip install yq
 
 script:
-  - travis_wait 50 ./helm-sync.sh
+  - ./helm-sync.sh
 
