@@ -17,7 +17,5 @@ before_install:
 
 install:
   - pip install yq
-
-script:
-  - ./helm-sync.sh
+  - bash helm-sync.sh
 
