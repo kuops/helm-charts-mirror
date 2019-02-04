@@ -103,7 +103,7 @@
 {
   "name": "airflow",
   "version": "0.15.0",
-  "digest": "758847c975f034b3fb87923753ff97b7c31bdaa6585927bc92671e6b60821590",
+  "digest": "7e7d8f473be93bd45ebd66f7a4a8565e9c2af073ed258687d351ab0d1d100093",
   "url": "https://kubernetes-charts.storage.googleapis.com/airflow-0.15.0.tgz"
 }
 {
@@ -151,7 +151,7 @@
 {
   "name": "anchore-engine",
   "version": "0.11.0",
-  "digest": "52f6a923f2ac4a851b7afb3306bd41014887d03222da646d4030954e95df29c9",
+  "digest": "296c3be53cfce36c051c1c6a5057bf0cad4ea9b0a19d7e2db7903fd030833884",
   "url": "https://kubernetes-charts.storage.googleapis.com/anchore-engine-0.11.0.tgz"
 }
 {
@@ -4572,8 +4572,14 @@
 }
 {
   "name": "elastic-stack",
+  "version": "1.5.0",
+  "digest": "818b6b60d40febf474e5ada71f8dd141b945e10755e57b180bc3ebb861e1ac29",
+  "url": "https://kubernetes-charts.storage.googleapis.com/elastic-stack-1.5.0.tgz"
+}
+{
+  "name": "elastic-stack",
   "version": "1.4.1",
-  "digest": "9b251a8ed113254976ca06e996f09ccabc5c60cb3dfaf963fdd15886a0d6a85b",
+  "digest": "c21fd6df74a3fd7c34eaaaa35e026133c493ef25bf32b7e0a8ed9709e80ab807",
   "url": "https://kubernetes-charts.storage.googleapis.com/elastic-stack-1.4.1.tgz"
 }
 {
@@ -4605,6 +4611,12 @@
   "version": "1.0.0",
   "digest": "71bb7909e90c891a34c1cf027148ea626272d94cc2a115c86190b3d7d45619a1",
   "url": "https://kubernetes-charts.storage.googleapis.com/elastic-stack-1.0.0.tgz"
+}
+{
+  "name": "elasticsearch",
+  "version": "1.18.1",
+  "digest": "0ac918340c5fb2a57c87e9ebff648786327f837921391a45028cc5301b179b54",
+  "url": "https://kubernetes-charts.storage.googleapis.com/elasticsearch-1.18.1.tgz"
 }
 {
   "name": "elasticsearch",
@@ -9079,7 +9091,7 @@
 {
   "name": "janusgraph",
   "version": "0.2.0",
-  "digest": "cb54b00dbf300674a501e2bf8c592dec8a470889132f0cec40e495aae0f481fe",
+  "digest": "49f081f7f68d43eb822191365e3b6ca8b676e186cc8ad36857a25c8c12e60285",
   "url": "https://kubernetes-charts.storage.googleapis.com/janusgraph-0.2.0.tgz"
 }
 {
@@ -10938,6 +10950,12 @@
 }
 {
   "name": "kibana",
+  "version": "1.4.1",
+  "digest": "46acc833daea97729a97fe79989f7119b56a34e724b3bf070175cfae9b7dd614",
+  "url": "https://kubernetes-charts.storage.googleapis.com/kibana-1.4.1.tgz"
+}
+{
+  "name": "kibana",
   "version": "1.4.0",
   "digest": "f02ae7244bd3209bc52caf3993d0762dad1cabac3c19bc9043f8cede4136540e",
   "url": "https://kubernetes-charts.storage.googleapis.com/kibana-1.4.0.tgz"
@@ -11611,7 +11629,7 @@
 {
   "name": "kube-ops-view",
   "version": "0.7.0",
-  "digest": "1d49b24e72bd0bd29f958ff7419716317d72848497a8b1ca1a534dc2ee6923d9",
+  "digest": "b5429102862c07633ea301d208e762123e0e4514fcb8824b6d5d5e2cd792f329",
   "url": "https://kubernetes-charts.storage.googleapis.com/kube-ops-view-0.7.0.tgz"
 }
 {
@@ -16638,6 +16656,12 @@
 }
 {
   "name": "mysqldump",
+  "version": "2.4.0",
+  "digest": "c359c9a707e4d902df79d92e9b85bd50724677fbbed417d370a8ae6f3ae62778",
+  "url": "https://kubernetes-charts.storage.googleapis.com/mysqldump-2.4.0.tgz"
+}
+{
+  "name": "mysqldump",
   "version": "2.3.1",
   "digest": "7c46ecf692daa7544c245fee34b1dcd906d197f36bce6a2c1cea2a7222118d0d",
   "url": "https://kubernetes-charts.storage.googleapis.com/mysqldump-2.3.1.tgz"
@@ -17799,6 +17823,12 @@
   "version": "0.1.0",
   "digest": "2dee942e546940beb8301a94a1a51e22c7a38b4c5592701528149dfaa83e1bb6",
   "url": "https://kubernetes-charts.storage.googleapis.com/nginx-lego-0.1.0.tgz"
+}
+{
+  "name": "node-problem-detector",
+  "version": "1.3.1",
+  "digest": "ff4a8117cb2ef4a3cac3de0872a1e23e075fe13a8428dc9bb95c9fe07085ab75",
+  "url": "https://kubernetes-charts.storage.googleapis.com/node-problem-detector-1.3.1.tgz"
 }
 {
   "name": "node-problem-detector",
@@ -21354,6 +21384,12 @@
 }
 {
   "name": "postgresql",
+  "version": "3.10.0",
+  "digest": "f151295e9af0d446f7d1184a328f025657ee9ac3e1cbfb491cc5b3e8d7ec4ca9",
+  "url": "https://kubernetes-charts.storage.googleapis.com/postgresql-3.10.0.tgz"
+}
+{
+  "name": "postgresql",
   "version": "3.9.5",
   "digest": "fd734f4e2e9a253f1e59c9486e022239a9af6e2c6a8b016c3e8298df419b7689",
   "url": "https://kubernetes-charts.storage.googleapis.com/postgresql-3.9.5.tgz"
@@ -23503,7 +23539,7 @@
 {
   "name": "prometheus-operator",
   "version": "2.1.5",
-  "digest": "3528992743c611c677566b0957f0c7c5f13b4405f99ac4528428bb348738c614",
+  "digest": "8ccb833fce263bfffbe503529811c4f12ceed0c951553e1b08223a66b9ff3ee9",
   "url": "https://kubernetes-charts.storage.googleapis.com/prometheus-operator-2.1.5.tgz"
 }
 {
@@ -28069,7 +28105,7 @@
 {
   "name": "spring-cloud-data-flow",
   "version": "1.0.2",
-  "digest": "a08af08d5208862eb9f7c6228c844b36cccdb11e7ce15f9bca33cb8a460ab702",
+  "digest": "248c780adb8c2f4b2cfb3dfac48f4265713667b4e51b2ed2e1ffb2c97a4d25f7",
   "url": "https://kubernetes-charts.storage.googleapis.com/spring-cloud-data-flow-1.0.2.tgz"
 }
 {
@@ -29376,6 +29412,12 @@
 }
 {
   "name": "traefik",
+  "version": "1.60.0",
+  "digest": "94ab743c3a91917b29182878d9e360979b8fc73d9cdb7876ae85fb18f93642e9",
+  "url": "https://kubernetes-charts.storage.googleapis.com/traefik-1.60.0.tgz"
+}
+{
+  "name": "traefik",
   "version": "1.59.2",
   "digest": "69f482c8ccc473b22ba6083622a94051217691e58c1a013e0312c1b8922557ec",
   "url": "https://kubernetes-charts.storage.googleapis.com/traefik-1.59.2.tgz"
@@ -30481,7 +30523,7 @@
 {
   "name": "weave-scope",
   "version": "0.11.0",
-  "digest": "95841b5b420c160968a3d20cfa06a76428de475e3f462b58620111d9d332590c",
+  "digest": "1098228ce398fe5c94122a794ee2e492d93dbdf5c7d3a74c1d973b363e95b523",
   "url": "https://kubernetes-charts.storage.googleapis.com/weave-scope-0.11.0.tgz"
 }
 {
