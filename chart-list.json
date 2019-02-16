@@ -103,7 +103,7 @@
 {
   "name": "airflow",
   "version": "0.17.3",
-  "digest": "d283dbf96b8b3ea47568c50d1ed3d1911480d88c2e3699d01f27c6a8282cf7b3",
+  "digest": "2380fc70d389117ae96f36f3e2abbfa55003157e8b557b5d5e30fc589fc9c36d",
   "url": "https://kubernetes-charts.storage.googleapis.com/airflow-0.17.3.tgz"
 }
 {
@@ -180,6 +180,12 @@
 }
 {
   "name": "ambassador",
+  "version": "1.1.3",
+  "digest": "e587be5680edebbef2456ff8b5c1ccc066dbec42f6d530592a0b019e0df3ca3a",
+  "url": "https://kubernetes-charts.storage.googleapis.com/ambassador-1.1.3.tgz"
+}
+{
+  "name": "ambassador",
   "version": "1.1.2",
   "digest": "6ebb8fe1688cba9b5a1457e0a4d2f0817239c480b4437d1ad438b42bedafb6ce",
   "url": "https://kubernetes-charts.storage.googleapis.com/ambassador-1.1.2.tgz"
@@ -205,7 +211,7 @@
 {
   "name": "anchore-engine",
   "version": "0.11.0",
-  "digest": "296c3be53cfce36c051c1c6a5057bf0cad4ea9b0a19d7e2db7903fd030833884",
+  "digest": "52f6a923f2ac4a851b7afb3306bd41014887d03222da646d4030954e95df29c9",
   "url": "https://kubernetes-charts.storage.googleapis.com/anchore-engine-0.11.0.tgz"
 }
 {
@@ -789,6 +795,12 @@
   "version": "0.2.0",
   "digest": "52ee58b51619f641d0f6df4c778bcd068242379a1a040a269f0fc93867b79b13",
   "url": "https://kubernetes-charts.storage.googleapis.com/aws-cluster-autoscaler-0.2.0.tgz"
+}
+{
+  "name": "aws-iam-authenticator",
+  "version": "0.1.0",
+  "digest": "dca5d054a13dbe7c0184e509f267ab91687408cdde631523a044050dc0d2bfd7",
+  "url": "https://kubernetes-charts.storage.googleapis.com/aws-iam-authenticator-0.1.0.tgz"
 }
 {
   "name": "bitcoind",
@@ -4693,7 +4705,7 @@
 {
   "name": "elastic-stack",
   "version": "1.5.0",
-  "digest": "0d211b85326f4fdbf7bb856918ad777342d46fca09f742115430a4e5fe4102c0",
+  "digest": "6f53f4fe61f75c54ecb2d526b7b91881e570dc3412b22b69fd381cfd65af2f6d",
   "url": "https://kubernetes-charts.storage.googleapis.com/elastic-stack-1.5.0.tgz"
 }
 {
@@ -7363,7 +7375,7 @@
 {
   "name": "gitlab-ce",
   "version": "0.2.2",
-  "digest": "2ceca61491e2a64cd3e4ff0ec443468e9bee71be6871644cb6c8a8435b8e2c06",
+  "digest": "91b923d989bf7686fc9b489dedb1b7d235a4f7267dd9ca36d4f3428e91b9318c",
   "url": "https://kubernetes-charts.storage.googleapis.com/gitlab-ce-0.2.2.tgz"
 }
 {
@@ -9343,7 +9355,7 @@
 {
   "name": "janusgraph",
   "version": "0.2.0",
-  "digest": "460256112441a404a376ec82e7ed4f8c8b06c37595756ed193d15db79c088fda",
+  "digest": "7ef8c5657aef5fa693b61dbbe434e8357137905df2caa6d5c4f9c34ce31c2a60",
   "url": "https://kubernetes-charts.storage.googleapis.com/janusgraph-0.2.0.tgz"
 }
 {
@@ -11983,7 +11995,7 @@
 {
   "name": "kube-ops-view",
   "version": "0.7.0",
-  "digest": "79efe3ab2a389353daa9538b3acea92e14c28deeaee0c610aabce0c32bb6e689",
+  "digest": "47c42e2c1bfc630a72a48c72d04e095c5be9f580f1c9691b2631f32570fee5ed",
   "url": "https://kubernetes-charts.storage.googleapis.com/kube-ops-view-0.7.0.tgz"
 }
 {
@@ -12843,6 +12855,12 @@
   "version": "0.1.0",
   "digest": "b89585d6db89b36df992d64a6ea38c3af15c15d8e28d3f97bbab06fb9187fec6",
   "url": "https://kubernetes-charts.storage.googleapis.com/kured-0.1.0.tgz"
+}
+{
+  "name": "lamp",
+  "version": "1.1.0",
+  "digest": "fd1df4735af92dfa19ccefc9e84daaeda129f3fd0eeeb7f27209fc5479b5c0a6",
+  "url": "https://kubernetes-charts.storage.googleapis.com/lamp-1.1.0.tgz"
 }
 {
   "name": "lamp",
@@ -17655,6 +17673,12 @@
   "version": "0.1.0",
   "digest": "b5e96ae6383a48e6b95362e9e0fb491b0164ff7045128c5a0cff0b0d76161fdd",
   "url": "https://kubernetes-charts.storage.googleapis.com/nfs-server-provisioner-0.1.0.tgz"
+}
+{
+  "name": "nginx-ingress",
+  "version": "1.3.1",
+  "digest": "f2afafb094da3f25de03cfd9796fb932abeaa627e2ea6c8b0e0aa94d2ce53d83",
+  "url": "https://kubernetes-charts.storage.googleapis.com/nginx-ingress-1.3.1.tgz"
 }
 {
   "name": "nginx-ingress",
@@ -24108,8 +24132,14 @@
 }
 {
   "name": "prometheus-operator",
+  "version": "2.2.2",
+  "digest": "b71fb6e88fb591ea1ce7da782157a615692d192aa71308a38fecce54561107e9",
+  "url": "https://kubernetes-charts.storage.googleapis.com/prometheus-operator-2.2.2.tgz"
+}
+{
+  "name": "prometheus-operator",
   "version": "2.2.1",
-  "digest": "b307b407406ac3d600e05a31a84218076cc7e022c77f9336693052ef5ff2c7fa",
+  "digest": "373243f983b42cc5605b4e25d3856b28461144e564393199d7a32e68b926ce29",
   "url": "https://kubernetes-charts.storage.googleapis.com/prometheus-operator-2.2.1.tgz"
 }
 {
@@ -24747,6 +24777,12 @@
   "version": "0.2.0",
   "digest": "6ff00cb387d0d7955b572042a7b6d54f6ecb7f950daa66a019a984298cea10ea",
   "url": "https://kubernetes-charts.storage.googleapis.com/quassel-0.2.0.tgz"
+}
+{
+  "name": "rabbitmq",
+  "version": "4.2.1",
+  "digest": "cffbd19d3ecb9b6f72126495d4a6367a20ca7a13acaecb8e14981521325a3140",
+  "url": "https://kubernetes-charts.storage.googleapis.com/rabbitmq-4.2.1.tgz"
 }
 {
   "name": "rabbitmq",
@@ -27000,6 +27036,12 @@
 }
 {
   "name": "reloader",
+  "version": "1.0.1",
+  "digest": "372acd3a4fb0ece027c3d02ef9db97193fe8fa2af29e30d748f2f3f350823bf6",
+  "url": "https://kubernetes-charts.storage.googleapis.com/reloader-1.0.1.tgz"
+}
+{
+  "name": "reloader",
   "version": "1.0.0",
   "digest": "f2a995bf06da49bc4cd9284b10ba7c245963d651ebcc6d258c8875d3bc8ad6bd",
   "url": "https://kubernetes-charts.storage.googleapis.com/reloader-1.0.0.tgz"
@@ -28539,6 +28581,12 @@
   "version": "1.0.0",
   "digest": "1c202628cd57e01cb324ee6e9457b52d1e1a5fd665f99d4bb25bd17c92c438e9",
   "url": "https://kubernetes-charts.storage.googleapis.com/spartakus-1.0.0.tgz"
+}
+{
+  "name": "spinnaker",
+  "version": "1.7.2",
+  "digest": "32307805df3544a1a0bb9ba282ec904291c5dd0bc670abfc96c24e53a589a9c2",
+  "url": "https://kubernetes-charts.storage.googleapis.com/spinnaker-1.7.2.tgz"
 }
 {
   "name": "spinnaker",
@@ -31303,7 +31351,7 @@
 {
   "name": "weave-scope",
   "version": "0.11.0",
-  "digest": "1098228ce398fe5c94122a794ee2e492d93dbdf5c7d3a74c1d973b363e95b523",
+  "digest": "95841b5b420c160968a3d20cfa06a76428de475e3f462b58620111d9d332590c",
   "url": "https://kubernetes-charts.storage.googleapis.com/weave-scope-0.11.0.tgz"
 }
 {
@@ -31951,7 +31999,7 @@
 {
   "name": "xray",
   "version": "0.4.2",
-  "digest": "929c2d1aab4954b0bac6ab823594bca89ec31511106fbb1530f59d6229b5470b",
+  "digest": "a18ca0d9c8644b5c704510afeed828e3f68dd459da43948192f5547fa5ce7052",
   "url": "https://kubernetes-charts.storage.googleapis.com/xray-0.4.2.tgz"
 }
 {
