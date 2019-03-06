@@ -103,7 +103,7 @@
 {
   "name": "airflow",
   "version": "2.1.0",
-  "digest": "4e59c218a0c34a136d1cba41b51a5ac28f4da4884769ab807edfe62b7c4ebc1d",
+  "digest": "23949a04226f46fab173a47a30f2acec6908c217f291297449ef19c61312bbcd",
   "url": "https://kubernetes-charts.storage.googleapis.com/airflow-2.1.0.tgz"
 }
 {
@@ -990,6 +990,12 @@
 }
 {
   "name": "burrow",
+  "version": "1.0.5",
+  "digest": "ac8bf9a1a55f10a8494a19cd4041ccb805dad93b84c32107eac8ac025653f916",
+  "url": "https://kubernetes-charts.storage.googleapis.com/burrow-1.0.5.tgz"
+}
+{
+  "name": "burrow",
   "version": "1.0.1",
   "digest": "46e8e3effa8e2a7bb2bdbd4d44c7f4fdf42bf6984a32632aee71c7cd3582d7b7",
   "url": "https://kubernetes-charts.storage.googleapis.com/burrow-1.0.1.tgz"
@@ -1335,6 +1341,12 @@
   "version": "0.3.1-1",
   "digest": "6439a906666fc62e7aeb28186ce2f4a730216941163edd799176cc30616e713a",
   "url": "https://kubernetes-charts.storage.googleapis.com/chaoskube-0.3.1-1.tgz"
+}
+{
+  "name": "chartmuseum",
+  "version": "2.0.0",
+  "digest": "e79a78a10fa92a15b3536a9818f843c2cada233f74c336c0da47c7754c6df1e5",
+  "url": "https://kubernetes-charts.storage.googleapis.com/chartmuseum-2.0.0.tgz"
 }
 {
   "name": "chartmuseum",
@@ -4116,6 +4128,12 @@
 }
 {
   "name": "drone",
+  "version": "2.0.0-rc.8",
+  "digest": "3233c6c4b6bba443d013e0cd561b1ed395cef4c8f3a7c327afb12ba642ca6ba8",
+  "url": "https://kubernetes-charts.storage.googleapis.com/drone-2.0.0-rc.8.tgz"
+}
+{
+  "name": "drone",
   "version": "2.0.0-rc.7",
   "digest": "f2b55b8cb0b0cf910bf682fff7652b4782f7c7c9b26d40e330dce8f46f9652a3",
   "url": "https://kubernetes-charts.storage.googleapis.com/drone-2.0.0-rc.7.tgz"
@@ -4909,7 +4927,7 @@
 {
   "name": "elastic-stack",
   "version": "1.5.0",
-  "digest": "d886cf98eea1ac74a105a44aff3359aae3b31b0652e8a5260378cc2db23a0959",
+  "digest": "b15d2630bbba4ee231e9606b6a1f73e26a2444345c6eb50a9bb2364933663014",
   "url": "https://kubernetes-charts.storage.googleapis.com/elastic-stack-1.5.0.tgz"
 }
 {
@@ -8857,7 +8875,7 @@
 {
   "name": "graylog",
   "version": "0.1.0",
-  "digest": "aa8a54973b83e70c538ef18f65a2bb20b9d1cdf32b19b3c5196b0a0b0ca72390",
+  "digest": "eb8ede16e011ea7388f6ea679ce27930a5e7317486ccf298673a56f59ac70e27",
   "url": "https://kubernetes-charts.storage.googleapis.com/graylog-0.1.0.tgz"
 }
 {
@@ -9133,7 +9151,7 @@
 {
   "name": "hlf-ca",
   "version": "1.1.6",
-  "digest": "3fc02d2e0bb1f102f598d560e8320dc36cf041f6fc37163655020b6f1ec50aa5",
+  "digest": "d2c97d11d271d1621584a31707361ea43124dfa55854c98d68259a4ae9523e4d",
   "url": "https://kubernetes-charts.storage.googleapis.com/hlf-ca-1.1.6.tgz"
 }
 {
@@ -9769,7 +9787,7 @@
 {
   "name": "janusgraph",
   "version": "0.2.0",
-  "digest": "39538d0e4c85ebf0b8a23f6a1e79242dd0e2ac03514bd9f085c1ec7c321d9b5b",
+  "digest": "711142d513ea938be360c0db2ca908ed05aac24ce11d5ad761abcb54ba2675ba",
   "url": "https://kubernetes-charts.storage.googleapis.com/janusgraph-0.2.0.tgz"
 }
 {
@@ -11784,6 +11802,12 @@
 }
 {
   "name": "kibana",
+  "version": "1.6.0",
+  "digest": "dd5860671120f556f27a96bc2cbff0172d0fe041c39a4b477355a42db223aeed",
+  "url": "https://kubernetes-charts.storage.googleapis.com/kibana-1.6.0.tgz"
+}
+{
+  "name": "kibana",
   "version": "1.5.2",
   "digest": "3e1e7cd8a52b866c35e1e86c2f56f54dffddc0b746830bb9328dac9202d182d8",
   "url": "https://kubernetes-charts.storage.googleapis.com/kibana-1.5.2.tgz"
@@ -12499,7 +12523,7 @@
 {
   "name": "kube-ops-view",
   "version": "0.7.0",
-  "digest": "e25864e6da95667d63aebd8d67dcd3ccdac99ae2bf61fbad70e5e87d24084cf5",
+  "digest": "12e7b364a4c96b24a1b4199f62e1849f335ccab9c57eceea06cce73098697304",
   "url": "https://kubernetes-charts.storage.googleapis.com/kube-ops-view-0.7.0.tgz"
 }
 {
@@ -13530,6 +13554,12 @@
 }
 {
   "name": "logstash",
+  "version": "1.5.2",
+  "digest": "4efd5accf68bc7099457a6b4a40759abf9638b9327d2a76027e54db5d41943c0",
+  "url": "https://kubernetes-charts.storage.googleapis.com/logstash-1.5.2.tgz"
+}
+{
+  "name": "logstash",
   "version": "1.5.1",
   "digest": "bbab97a5d6beb357c9f0e031d6f128245858f46d65167a0a91f8e0a31b0c135e",
   "url": "https://kubernetes-charts.storage.googleapis.com/logstash-1.5.1.tgz"
@@ -14013,6 +14043,12 @@
   "version": "1.0.0",
   "digest": "166b98ed4f158b6996473b1fc37ff3b9caa9d43bff082afff9a80972ba88053e",
   "url": "https://kubernetes-charts.storage.googleapis.com/mailhog-1.0.0.tgz"
+}
+{
+  "name": "mariadb",
+  "version": "5.7.2",
+  "digest": "dd3693d15caec0c453865b26c09f6466e1bafc48251bcaca50463d9e524ede53",
+  "url": "https://kubernetes-charts.storage.googleapis.com/mariadb-5.7.2.tgz"
 }
 {
   "name": "mariadb",
@@ -14673,6 +14709,12 @@
   "version": "0.3.0",
   "digest": "7354d2672b3983e98fe5c31d96d2c3d9c73edefe642eb5e1981484804315c4bc",
   "url": "https://kubernetes-charts.storage.googleapis.com/mariadb-0.3.0.tgz"
+}
+{
+  "name": "mattermost-team-edition",
+  "version": "3.0.0",
+  "digest": "d36f953e96a9838297b3733dd6ef8b94d9d8cb7a28796942caf26967e86bfdaf",
+  "url": "https://kubernetes-charts.storage.googleapis.com/mattermost-team-edition-3.0.0.tgz"
 }
 {
   "name": "mattermost-team-edition",
@@ -20262,6 +20304,12 @@
 }
 {
   "name": "orangehrm",
+  "version": "4.0.3",
+  "digest": "9cb5f73511f77d35cf2545b0f68b38167c20a1570807e976d9b9da819dd49ff7",
+  "url": "https://kubernetes-charts.storage.googleapis.com/orangehrm-4.0.3.tgz"
+}
+{
+  "name": "orangehrm",
   "version": "4.0.2",
   "digest": "6add7ccf5946c5710ce3734082a5ecca7197568cb9d836b242b69ecf925b8fe2",
   "url": "https://kubernetes-charts.storage.googleapis.com/orangehrm-4.0.2.tgz"
@@ -25050,8 +25098,14 @@
 }
 {
   "name": "prometheus-operator",
+  "version": "4.3.1",
+  "digest": "223de7ea722e6ad5860f5727721f0b152f750203c44937951a7ca274fa354f84",
+  "url": "https://kubernetes-charts.storage.googleapis.com/prometheus-operator-4.3.1.tgz"
+}
+{
+  "name": "prometheus-operator",
   "version": "4.3.0",
-  "digest": "a4147b52a6424a5a2a09f8f1b58dcd2ffe1171a27d30feaa8a06458e754e2a45",
+  "digest": "3c7c36fdecdc31f06099f0816597badfad3f554132384c7507d74262803609b8",
   "url": "https://kubernetes-charts.storage.googleapis.com/prometheus-operator-4.3.0.tgz"
 }
 {
