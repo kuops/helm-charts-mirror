@@ -109,7 +109,7 @@
 {
   "name": "airflow",
   "version": "2.4.0",
-  "digest": "3676893db97486ecb430485950def5e959a10593438b980357aa44836c1b327f",
+  "digest": "4608d8f0f1ec5acc43121821cefc4e5ed9597b678d39a7b9f93607370787b800",
   "url": "https://kubernetes-charts.storage.googleapis.com/airflow-2.4.0.tgz"
 }
 {
@@ -5233,7 +5233,7 @@
 {
   "name": "elastic-stack",
   "version": "1.5.1",
-  "digest": "ac6e786acb52de4b236e24fe8440b06d9053575f671a359b01f4e1c9e5572e41",
+  "digest": "ee06327a76b101f26462f07e87e13fa06a00a15f6275b3845a2caea0c68f0737",
   "url": "https://kubernetes-charts.storage.googleapis.com/elastic-stack-1.5.1.tgz"
 }
 {
@@ -9415,7 +9415,7 @@
 {
   "name": "graylog",
   "version": "0.1.1",
-  "digest": "4151e8244eb69e74c056ef0fd5e38a739537de6b5034209b070201cb27b8aaf3",
+  "digest": "ea876603a5c58181c139d28a0c4edb710a521426bd3215ae7ece5b69475645a0",
   "url": "https://kubernetes-charts.storage.googleapis.com/graylog-0.1.1.tgz"
 }
 {
@@ -10387,7 +10387,7 @@
 {
   "name": "janusgraph",
   "version": "0.2.0",
-  "digest": "31d5190896823eff42b6374ed46c824539a35a15d6eb768d78aed09bc44ab957",
+  "digest": "b3b0093dd0918a180d85e0c8e5e912d631680a77b91ca49c7080eb6f1ca71739",
   "url": "https://kubernetes-charts.storage.googleapis.com/janusgraph-0.2.0.tgz"
 }
 {
@@ -13285,7 +13285,7 @@
 {
   "name": "kube-ops-view",
   "version": "0.7.0",
-  "digest": "f717582cdda750d4f55d6a5840edfa755abf55062d66816da39580dc48ea69a4",
+  "digest": "660d08cf6db64e8efa27206ac6f29d2c6de11357997608b680210e927ffb5225",
   "url": "https://kubernetes-charts.storage.googleapis.com/kube-ops-view-0.7.0.tgz"
 }
 {
@@ -19422,6 +19422,12 @@
 }
 {
   "name": "nfs-client-provisioner",
+  "version": "1.2.5",
+  "digest": "7dc0b5d6251cea15020d920aa1994cf427abd2460242907f67945de546b29755",
+  "url": "https://kubernetes-charts.storage.googleapis.com/nfs-client-provisioner-1.2.5.tgz"
+}
+{
+  "name": "nfs-client-provisioner",
   "version": "1.2.4",
   "digest": "83e3a73a8f3ec4b0420e655b57e93ec07ab7042623a07cb324e06da229a07259",
   "url": "https://kubernetes-charts.storage.googleapis.com/nfs-client-provisioner-1.2.4.tgz"
@@ -22545,6 +22551,12 @@
   "version": "0.1.0",
   "digest": "483794c8737868e4a1b8f84c7f6c67b7fdd9e5aa5f95703ee23e199be236f136",
   "url": "https://kubernetes-charts.storage.googleapis.com/pachyderm-0.1.0.tgz"
+}
+{
+  "name": "parse",
+  "version": "6.2.2",
+  "digest": "52f8c7c60c745a17dfd4635d7acb7be025d47dae49c5f9722aecec63556f1616",
+  "url": "https://kubernetes-charts.storage.googleapis.com/parse-6.2.2.tgz"
 }
 {
   "name": "parse",
@@ -30294,6 +30306,12 @@
 }
 {
   "name": "selenium",
+  "version": "1.0.7",
+  "digest": "aaa641dd0095539b2f89deb461a32e07fcb54cd0761211e2458ab3932ea48dc2",
+  "url": "https://kubernetes-charts.storage.googleapis.com/selenium-1.0.7.tgz"
+}
+{
+  "name": "selenium",
   "version": "1.0.6",
   "digest": "ecc53bf21bc28233217cab5dc2b14c29a1c7802539393ec8e0174bf6162e3576",
   "url": "https://kubernetes-charts.storage.googleapis.com/selenium-1.0.6.tgz"
@@ -31585,7 +31603,7 @@
 {
   "name": "spinnaker",
   "version": "1.8.1",
-  "digest": "51a5dd133511606ba9e8e0e69b739ee284134a6a2ede48b427a921ed1aa42ac7",
+  "digest": "344d4029140f00a323b9bbe14d76fcee2464805786d134c6b959d155d5789079",
   "url": "https://kubernetes-charts.storage.googleapis.com/spinnaker-1.8.1.tgz"
 }
 {
