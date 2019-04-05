@@ -109,7 +109,7 @@
 {
   "name": "airflow",
   "version": "2.4.3",
-  "digest": "dd6aedecf68e0d11f5b75926dd2d49143c5850a94b286044c906522c0b9940e1",
+  "digest": "8fda7ec3ce70a91a91e515d20cd72a6cd56aabb27906df2cc7f669bfd40a7ee1",
   "url": "https://kubernetes-charts.storage.googleapis.com/airflow-2.4.3.tgz"
 }
 {
@@ -5299,7 +5299,7 @@
 {
   "name": "elastic-stack",
   "version": "1.6.0",
-  "digest": "c4c65330dea33df061b0bc6bc304115ecb3fce5aa296a7e3324292e0aa58247e",
+  "digest": "71309089a65ff0211b51d5ef8410cbce837a6b86aed05bc987984780a3e4d137",
   "url": "https://kubernetes-charts.storage.googleapis.com/elastic-stack-1.6.0.tgz"
 }
 {
@@ -8287,7 +8287,7 @@
 {
   "name": "gitlab-ce",
   "version": "0.2.2",
-  "digest": "91b923d989bf7686fc9b489dedb1b7d235a4f7267dd9ca36d4f3428e91b9318c",
+  "digest": "2ceca61491e2a64cd3e4ff0ec443468e9bee71be6871644cb6c8a8435b8e2c06",
   "url": "https://kubernetes-charts.storage.googleapis.com/gitlab-ce-0.2.2.tgz"
 }
 {
@@ -9553,7 +9553,7 @@
 {
   "name": "graylog",
   "version": "0.1.2",
-  "digest": "2512a9144402f9e86c3c872be7fa5dd3be8dde46dc10895e7bce750c3ae1a510",
+  "digest": "97dfaf79c1a5e82124118e0b8e4f7c4762a5997d6efe06a6353653de201e8b55",
   "url": "https://kubernetes-charts.storage.googleapis.com/graylog-0.1.2.tgz"
 }
 {
@@ -10543,7 +10543,7 @@
 {
   "name": "janusgraph",
   "version": "0.2.0",
-  "digest": "b7d9047433b5e5db49c9bb7840ca7ba22e1426280e7b1a8fd6874e1197aecbb1",
+  "digest": "42cab0bbf03fd233cdb9d6b97b3d60e39e6b5d3f058641e7d25c84d9eb166c70",
   "url": "https://kubernetes-charts.storage.googleapis.com/janusgraph-0.2.0.tgz"
 }
 {
@@ -10821,6 +10821,12 @@
   "version": "0.1.1",
   "digest": "5cc4af8c88691d7030602c97be2ccbc125ef11129b361da0aa236a127c31b965",
   "url": "https://kubernetes-charts.storage.googleapis.com/jasperreports-0.1.1.tgz"
+}
+{
+  "name": "jenkins",
+  "version": "0.37.0",
+  "digest": "6944812963a81f8ddfd70dff160eabc1842643b35399042d5a507a9e00859e35",
+  "url": "https://kubernetes-charts.storage.googleapis.com/jenkins-0.37.0.tgz"
 }
 {
   "name": "jenkins",
@@ -13477,7 +13483,7 @@
 {
   "name": "kube-ops-view",
   "version": "0.7.0",
-  "digest": "a4dfff1a3492fbafd1f436cc9599a1a1c9cfd90053ef46f5b6a037f95ce3bf19",
+  "digest": "1ec8b7cf2da90d79630eaa7b3cce7c42683d0f751c9d344dde8db94a3a356817",
   "url": "https://kubernetes-charts.storage.googleapis.com/kube-ops-view-0.7.0.tgz"
 }
 {
@@ -16299,6 +16305,12 @@
   "version": "0.4.0",
   "digest": "9617f13f51f5bb016a072f2a026c627420721a1c5b7cd22f32d6cd0c90f34eda",
   "url": "https://kubernetes-charts.storage.googleapis.com/mediawiki-0.4.0.tgz"
+}
+{
+  "name": "memcached",
+  "version": "2.7.1",
+  "digest": "17a81b2702b156ed1b22f59fdc9148cdb185bbe263b9011ce23fe98f2e1edec7",
+  "url": "https://kubernetes-charts.storage.googleapis.com/memcached-2.7.1.tgz"
 }
 {
   "name": "memcached",
@@ -26916,6 +26928,12 @@
 }
 {
   "name": "prometheus-operator",
+  "version": "5.0.7",
+  "digest": "9a834d44951b32c34144e6320ed81dc3f5dbc3f8c6c45091f4feed02fb8dd44b",
+  "url": "https://kubernetes-charts.storage.googleapis.com/prometheus-operator-5.0.7.tgz"
+}
+{
+  "name": "prometheus-operator",
   "version": "5.0.6",
   "digest": "2966c96aadf0df9bedcb9c8c68125eef988eccc95a1ad8b5881ddb7a00bf6683",
   "url": "https://kubernetes-charts.storage.googleapis.com/prometheus-operator-5.0.6.tgz"
@@ -32263,7 +32281,7 @@
 {
   "name": "spring-cloud-data-flow",
   "version": "2.0.0",
-  "digest": "a71d284b3b3f3222d8720a1d4a99af50c704790e1c2a116de5f71df6d9fe2404",
+  "digest": "18169ae0e17d85ca605cde0171795dccbfbf1b41875c780901d634e1e6187150",
   "url": "https://kubernetes-charts.storage.googleapis.com/spring-cloud-data-flow-2.0.0.tgz"
 }
 {
@@ -33702,6 +33720,12 @@
 }
 {
   "name": "traefik",
+  "version": "1.66.0",
+  "digest": "9f847ddbecd8adb417a7fa26dc84052ac3048bc2f43af1f9447c8d8093a6c983",
+  "url": "https://kubernetes-charts.storage.googleapis.com/traefik-1.66.0.tgz"
+}
+{
+  "name": "traefik",
   "version": "1.65.0",
   "digest": "80b4615f9fba532130c40fac3e485e006087ffcfd08f3b502de1c05233dfd895",
   "url": "https://kubernetes-charts.storage.googleapis.com/traefik-1.65.0.tgz"
@@ -34839,6 +34863,12 @@
   "version": "0.1.0",
   "digest": "497da3c0cb9339f02d2f794f4cbe00e4379ca1952e06ae37a98b7aae2467dbe3",
   "url": "https://kubernetes-charts.storage.googleapis.com/voyager-0.1.0.tgz"
+}
+{
+  "name": "wavefront",
+  "version": "1.0.0",
+  "digest": "cd8ae810f57d8eac209963702e36d6f0bd618b33d95ee14224d4b6b864c4a05c",
+  "url": "https://kubernetes-charts.storage.googleapis.com/wavefront-1.0.0.tgz"
 }
 {
   "name": "weave-cloud",
