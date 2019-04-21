@@ -109,7 +109,7 @@
 {
   "name": "airflow",
   "version": "2.4.4",
-  "digest": "ae0d5630c9009402bc23d8d9bf30db5be9ebec12acb4ffb8084dcbecbc42e145",
+  "digest": "9ca92b6051d99ce5f75b360319ff989f32b10a0ba126490fe982f6b06fdcb1c7",
   "url": "https://kubernetes-charts.storage.googleapis.com/airflow-2.4.4.tgz"
 }
 {
@@ -2289,6 +2289,12 @@
   "version": "0.2.0",
   "digest": "7b41add319a997fd3d862d6649b707313f59ac6fa137842db65230342baff619",
   "url": "https://kubernetes-charts.storage.googleapis.com/cockroachdb-0.2.0.tgz"
+}
+{
+  "name": "collabora-code",
+  "version": "1.0.1",
+  "digest": "c41449075e369672efba6f53777b378c69f73fae27372e699102cac7304f8190",
+  "url": "https://kubernetes-charts.storage.googleapis.com/collabora-code-1.0.1.tgz"
 }
 {
   "name": "collabora-code",
@@ -5467,7 +5473,7 @@
 {
   "name": "elastic-stack",
   "version": "1.6.0",
-  "digest": "21593a44037f4b673789866bb598d2b20991df30b836172bbe56314d6b31a19f",
+  "digest": "52aca7a3881624155e0ef88265f963a9eca9daeeae295fb74d7be441b6707f86",
   "url": "https://kubernetes-charts.storage.googleapis.com/elastic-stack-1.6.0.tgz"
 }
 {
@@ -9841,7 +9847,7 @@
 {
   "name": "graylog",
   "version": "0.1.3",
-  "digest": "0ab675e7a6a2d8ba379132fb4c0d2c2584f6c8277f5575e57536f4579498820c",
+  "digest": "176c097331636c97d0448dcf74a393279a6763e3822c1ed4ad5ddbd21130f757",
   "url": "https://kubernetes-charts.storage.googleapis.com/graylog-0.1.3.tgz"
 }
 {
@@ -10855,7 +10861,7 @@
 {
   "name": "janusgraph",
   "version": "0.2.0",
-  "digest": "b246de659b7bcf7d508b1baf12150fa3963f52e0ac88830f519b3dd54ef45edd",
+  "digest": "d6acd4c319ca8355a7b590eac4afead3522c43e316956dbf04eb1d3c25f31bda",
   "url": "https://kubernetes-charts.storage.googleapis.com/janusgraph-0.2.0.tgz"
 }
 {
@@ -13855,7 +13861,7 @@
 {
   "name": "kube-ops-view",
   "version": "0.7.0",
-  "digest": "125fed8f1f9b235a98633f4f8780316e5ea46b3d43c33f0e68cf9b1b05df9368",
+  "digest": "fe90fc59390e13d05e0170df7f6702eb08ece83d82d6f5970cc6a694aa466a65",
   "url": "https://kubernetes-charts.storage.googleapis.com/kube-ops-view-0.7.0.tgz"
 }
 {
@@ -13917,6 +13923,12 @@
   "version": "0.2.0",
   "digest": "9e7b62f2d781aaacee801e91efe4d6b6ef6df9d511c0d6fb2d6e7977c8d0a06e",
   "url": "https://kubernetes-charts.storage.googleapis.com/kube-ops-view-0.2.0.tgz"
+}
+{
+  "name": "kube-slack",
+  "version": "0.4.1",
+  "digest": "b4c35b55c1c31195e9f7e2cc8ca9f9b37dd3397f8a0815b3ee7ed4ea5f6c253a",
+  "url": "https://kubernetes-charts.storage.googleapis.com/kube-slack-0.4.1.tgz"
 }
 {
   "name": "kube-slack",
@@ -17797,7 +17809,7 @@
 {
   "name": "mission-control",
   "version": "0.4.3",
-  "digest": "0e582c4aa3841299cd6e0d7429a079cbd99040d13556d9019cdca0b83e1d59c2",
+  "digest": "ae6aeb5b7037797a4bfcb45afc05e3d1ccdcbf73484cd2ab9b3a6d71cd48ed82",
   "url": "https://kubernetes-charts.storage.googleapis.com/mission-control-0.4.3.tgz"
 }
 {
@@ -20262,6 +20274,12 @@
 }
 {
   "name": "nginx-ingress",
+  "version": "1.5.0",
+  "digest": "8059f46b3145f1cea169ce6796f8dd1fcb4f2702331cc074d533f9157dcc249c",
+  "url": "https://kubernetes-charts.storage.googleapis.com/nginx-ingress-1.5.0.tgz"
+}
+{
+  "name": "nginx-ingress",
   "version": "1.4.0",
   "digest": "7e9c257875165ba3b9c1e3e13236a242bcfebbcf35bcc226f1d0db573fe929c8",
   "url": "https://kubernetes-charts.storage.googleapis.com/nginx-ingress-1.4.0.tgz"
@@ -21021,6 +21039,12 @@
   "version": "1.0.0",
   "digest": "0ed42d6d613bbe15f990a3b8fb33e3d3330df505624f9360167bd2f80df7e1dc",
   "url": "https://kubernetes-charts.storage.googleapis.com/node-red-1.0.0.tgz"
+}
+{
+  "name": "oauth2-proxy",
+  "version": "0.12.1",
+  "digest": "aa331fae40323c2f6041a7a6bf96981a3a73aadc9d097896469aebb863d58f43",
+  "url": "https://kubernetes-charts.storage.googleapis.com/oauth2-proxy-0.12.1.tgz"
 }
 {
   "name": "oauth2-proxy",
@@ -30613,7 +30637,7 @@
 {
   "name": "redmine",
   "version": "9.3.1",
-  "digest": "3029db43338fce3c4eff68ab19077522b2ac5aa336c354157d66be5470851e0e",
+  "digest": "45803f04dc5ae22a54f26d7d35511764dcd27575c8e7d3707b45ac773d5b5ada",
   "url": "https://kubernetes-charts.storage.googleapis.com/redmine-9.3.1.tgz"
 }
 {
@@ -32689,7 +32713,7 @@
 {
   "name": "spinnaker",
   "version": "1.8.1",
-  "digest": "344d4029140f00a323b9bbe14d76fcee2464805786d134c6b959d155d5789079",
+  "digest": "51a5dd133511606ba9e8e0e69b739ee284134a6a2ede48b427a921ed1aa42ac7",
   "url": "https://kubernetes-charts.storage.googleapis.com/spinnaker-1.8.1.tgz"
 }
 {
