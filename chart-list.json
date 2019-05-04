@@ -109,7 +109,7 @@
 {
   "name": "airflow",
   "version": "2.7.1",
-  "digest": "c1163a1657346ce28ac183294a6a5136aedcca43260abcd9c933170f301d7b89",
+  "digest": "caa6a10ffd37e813c7783676df9fd3b18bf4462b02040d1f3606461c668f39eb",
   "url": "https://kubernetes-charts.storage.googleapis.com/airflow-2.7.1.tgz"
 }
 {
@@ -403,7 +403,7 @@
 {
   "name": "anchore-engine",
   "version": "0.13.0",
-  "digest": "f5bbca3751ee048594dc5a60453bdbd3a0269c5f2a5250f4fcaebfe69edf1ef4",
+  "digest": "18acd0e0f0ecc07f1af5aa57563cec2bbb3bb342e6fe0ca8c8c4de0a1e0ae12b",
   "url": "https://kubernetes-charts.storage.googleapis.com/anchore-engine-0.13.0.tgz"
 }
 {
@@ -5719,7 +5719,7 @@
 {
   "name": "elastic-stack",
   "version": "1.6.0",
-  "digest": "7becfc5d6b6b804598ac9c20dd0d36f310ab7b95a09e1979ac73f491c7f3dfae",
+  "digest": "fb866f4fee132a8512227dd924aa0bc6c63446a3209b476cb17d6f6ecad6a75c",
   "url": "https://kubernetes-charts.storage.googleapis.com/elastic-stack-1.6.0.tgz"
 }
 {
@@ -8839,7 +8839,7 @@
 {
   "name": "gitlab-ce",
   "version": "0.2.2",
-  "digest": "91b923d989bf7686fc9b489dedb1b7d235a4f7267dd9ca36d4f3428e91b9318c",
+  "digest": "2ceca61491e2a64cd3e4ff0ec443468e9bee71be6871644cb6c8a8435b8e2c06",
   "url": "https://kubernetes-charts.storage.googleapis.com/gitlab-ce-0.2.2.tgz"
 }
 {
@@ -10201,7 +10201,7 @@
 {
   "name": "graylog",
   "version": "0.1.4",
-  "digest": "c48f9ae0ad0ee859bf3516c7c6de731ebdc3dea8280c42c1f78ecb5c32637b49",
+  "digest": "4248d74b2a00df0b7691a5b2d1e41329b464b62e8814e1f3b9b4be7b3c77a312",
   "url": "https://kubernetes-charts.storage.googleapis.com/graylog-0.1.4.tgz"
 }
 {
@@ -10555,7 +10555,7 @@
 {
   "name": "hlf-ca",
   "version": "1.1.6",
-  "digest": "3fc02d2e0bb1f102f598d560e8320dc36cf041f6fc37163655020b6f1ec50aa5",
+  "digest": "d2c97d11d271d1621584a31707361ea43124dfa55854c98d68259a4ae9523e4d",
   "url": "https://kubernetes-charts.storage.googleapis.com/hlf-ca-1.1.6.tgz"
 }
 {
@@ -11281,7 +11281,7 @@
 {
   "name": "janusgraph",
   "version": "0.2.0",
-  "digest": "9f8e66e28c6a579b48bd2394f753af32c35c4c71d6965ce5658de9e9ca7379ce",
+  "digest": "a1a96e488a52ce2c71194bdf0e3cd0d9f4a0cf0bb9fd206da965f4aef8c376f8",
   "url": "https://kubernetes-charts.storage.googleapis.com/janusgraph-0.2.0.tgz"
 }
 {
@@ -11559,6 +11559,12 @@
   "version": "0.1.1",
   "digest": "5cc4af8c88691d7030602c97be2ccbc125ef11129b361da0aa236a127c31b965",
   "url": "https://kubernetes-charts.storage.googleapis.com/jasperreports-0.1.1.tgz"
+}
+{
+  "name": "jenkins",
+  "version": "1.1.13",
+  "digest": "9f868f02cc74f4cc23ce4b3263b02a02b3e80314e7f1413b4ca5dfc6e41e7c1f",
+  "url": "https://kubernetes-charts.storage.googleapis.com/jenkins-1.1.13.tgz"
 }
 {
   "name": "jenkins",
@@ -13176,6 +13182,12 @@
 }
 {
   "name": "karma",
+  "version": "1.1.13",
+  "digest": "1f369777a40b9efc89758d18690359b808fd2762a643b0c58c56791af92af02a",
+  "url": "https://kubernetes-charts.storage.googleapis.com/karma-1.1.13.tgz"
+}
+{
+  "name": "karma",
   "version": "1.1.12",
   "digest": "4f68d1f3c4267603d2a773ee83c0b22bf715b94f353b239f6d683d5133b78c4a",
   "url": "https://kubernetes-charts.storage.googleapis.com/karma-1.1.12.tgz"
@@ -14431,7 +14443,7 @@
 {
   "name": "kube-ops-view",
   "version": "0.8.0",
-  "digest": "c0228ee57b215f2ff1bc8d36b087f951f61e5342c44c3cd65b8a121d8a5daf41",
+  "digest": "99d2aeace03ca5d679edc9f81389dba943c17d5b11a82bfe8bd44fabc23aa327",
   "url": "https://kubernetes-charts.storage.googleapis.com/kube-ops-view-0.8.0.tgz"
 }
 {
@@ -28393,7 +28405,7 @@
 {
   "name": "prometheus-operator",
   "version": "5.5.0",
-  "digest": "2c4b9d0a92e0b3b54a7cba2e094ff5271c1cfd5e92ce32a19af919503ee7687a",
+  "digest": "ab85af2f015ee6186dcac03171210507d4e258d188768f9cff5836181123aa02",
   "url": "https://kubernetes-charts.storage.googleapis.com/prometheus-operator-5.5.0.tgz"
 }
 {
@@ -32911,7 +32923,7 @@
 {
   "name": "sonarqube",
   "version": "1.0.0",
-  "digest": "c785887b748c0744b82d39156108052e4e8c5bc84f7af40faa1022226a874a3d",
+  "digest": "9166b418bb331ef5c097ef1ad452671656ad9f841117b5e4ee711011323cdf07",
   "url": "https://kubernetes-charts.storage.googleapis.com/sonarqube-1.0.0.tgz"
 }
 {
