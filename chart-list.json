@@ -139,7 +139,7 @@
 {
   "name": "airflow",
   "version": "3.0.2",
-  "digest": "2cf648dac2cfc4445c3dfcc7f28ccbbfa2b74fac4c9e05ed743bf84521909021",
+  "digest": "72d7c6eaa0ddad6cfce0dfe6d799094b6c794570960bb47621b8acfd974d8036",
   "url": "https://kubernetes-charts.storage.googleapis.com/airflow-3.0.2.tgz"
 }
 {
@@ -6697,7 +6697,7 @@
 {
   "name": "elastic-stack",
   "version": "1.8.0",
-  "digest": "26b60236519146b2af30c69ce475070837ce8f5098338ec8510dd4bb5ba26810",
+  "digest": "6fa774265a8748985fbbd6473a3a9327b9a544257c5025cf46539f6d601b602d",
   "url": "https://kubernetes-charts.storage.googleapis.com/elastic-stack-1.8.0.tgz"
 }
 {
@@ -10411,7 +10411,7 @@
 {
   "name": "gitlab-ee",
   "version": "0.2.2",
-  "digest": "2b6d773acd3f6cc7db818e55e46f66f791f58d7747c36fc356bb3248d6366d48",
+  "digest": "43358a820918f0421b2118806c059d0a592782b0a10251998c8b5fedd3b500ec",
   "url": "https://kubernetes-charts.storage.googleapis.com/gitlab-ee-0.2.2.tgz"
 }
 {
@@ -11791,7 +11791,7 @@
 {
   "name": "graylog",
   "version": "1.2.0",
-  "digest": "a84c5126a114d47491ec5437671beed3ec0e0f12814ca262036867d14c791f06",
+  "digest": "754c88abde1d53d6161bcd6d2e0c0799ef93e6872f7420268a94b55d405155b1",
   "url": "https://kubernetes-charts.storage.googleapis.com/graylog-1.2.0.tgz"
 }
 {
@@ -13111,7 +13111,7 @@
 {
   "name": "janusgraph",
   "version": "0.2.1",
-  "digest": "40c2a1bfeb274a6cec169d59712cef478dbecae52250bdcfe66b862622c246d0",
+  "digest": "c7879e009a1bf8a14d96f87232f0d4bf988453122265f2a405a62b1d0c91f69e",
   "url": "https://kubernetes-charts.storage.googleapis.com/janusgraph-0.2.1.tgz"
 }
 {
@@ -16717,7 +16717,7 @@
 {
   "name": "kube-ops-view",
   "version": "1.1.0",
-  "digest": "3f51a3718a342517a39b4a658b2b9b02ec68d8df2c33dcae0d697c6712edd3cc",
+  "digest": "bdb00d2a2a91f0a928b1712400c76c0eeb0cfaf7808869e3e0c11c197da08d9c",
   "url": "https://kubernetes-charts.storage.googleapis.com/kube-ops-view-1.1.0.tgz"
 }
 {
@@ -21421,7 +21421,7 @@
 {
   "name": "mission-control",
   "version": "0.4.3",
-  "digest": "0e582c4aa3841299cd6e0d7429a079cbd99040d13556d9019cdca0b83e1d59c2",
+  "digest": "ae6aeb5b7037797a4bfcb45afc05e3d1ccdcbf73484cd2ab9b3a6d71cd48ed82",
   "url": "https://kubernetes-charts.storage.googleapis.com/mission-control-0.4.3.tgz"
 }
 {
@@ -23169,6 +23169,12 @@
   "version": "0.1.6",
   "digest": "9bb8094c1d8af473f54e278660ee4b59433c87679235ab8a139d78310ae6ee19",
   "url": "https://kubernetes-charts.storage.googleapis.com/mssql-linux-0.1.6.tgz"
+}
+{
+  "name": "mysql",
+  "version": "1.3.0",
+  "digest": "f6010451b66b84cc4c6982fa5010acdbe6db036617900d2b2824be2e27fe389e",
+  "url": "https://kubernetes-charts.storage.googleapis.com/mysql-1.3.0.tgz"
 }
 {
   "name": "mysql",
@@ -25947,6 +25953,12 @@
   "version": "0.4.0",
   "digest": "15b1d5339086427990fb3d0ee8f65e768b398195f2db63b0356e6c79f4d4b981",
   "url": "https://kubernetes-charts.storage.googleapis.com/odoo-0.4.0.tgz"
+}
+{
+  "name": "opa",
+  "version": "1.5.1",
+  "digest": "8dfc45c3d50bd0e7b5461743ef8640286313145b800475ad6c0919884e6a3751",
+  "url": "https://kubernetes-charts.storage.googleapis.com/opa-1.5.1.tgz"
 }
 {
   "name": "opa",
@@ -40752,6 +40764,12 @@
 }
 {
   "name": "telegraf",
+  "version": "1.1.4",
+  "digest": "f5c8b2ce89024894bfaba76018e8384e51af904d2e109ec3a032cf3bae234d3b",
+  "url": "https://kubernetes-charts.storage.googleapis.com/telegraf-1.1.4.tgz"
+}
+{
+  "name": "telegraf",
   "version": "1.1.3",
   "digest": "78e050ddd127657d3d1d709f961e65a46074f0de7b5ca37ddf8e7f3a1166450d",
   "url": "https://kubernetes-charts.storage.googleapis.com/telegraf-1.1.3.tgz"
@@ -43537,7 +43555,7 @@
 {
   "name": "xray",
   "version": "0.4.2",
-  "digest": "929c2d1aab4954b0bac6ab823594bca89ec31511106fbb1530f59d6229b5470b",
+  "digest": "a18ca0d9c8644b5c704510afeed828e3f68dd459da43948192f5547fa5ce7052",
   "url": "https://kubernetes-charts.storage.googleapis.com/xray-0.4.2.tgz"
 }
 {
