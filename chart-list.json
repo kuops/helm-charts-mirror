@@ -139,7 +139,7 @@
 {
   "name": "airflow",
   "version": "3.0.6",
-  "digest": "38d2060d9d4f81acc6ea363d663e684c20c8ccef0ac583797973cb2e22d90be8",
+  "digest": "d53ba50d25e47a26c82d067d31b8b31aae7721ebbd1fd8086b42af5c320803eb",
   "url": "https://kubernetes-charts.storage.googleapis.com/airflow-3.0.6.tgz"
 }
 {
@@ -5311,7 +5311,7 @@
 {
   "name": "distribution",
   "version": "0.4.2",
-  "digest": "147c19593650f3fb5e665aae8893b740ba70ca5eb3093f2f3a33b73961558186",
+  "digest": "ff011af7ebf84fb03d3bc99abde8c6d85e52ed10d6895209fa9070b808aff320",
   "url": "https://kubernetes-charts.storage.googleapis.com/distribution-0.4.2.tgz"
 }
 {
@@ -6913,7 +6913,7 @@
 {
   "name": "elastic-stack",
   "version": "1.8.0",
-  "digest": "d3c1a5049dc38cc598b6ff0a1f0cb2c83f1574164890ecb05b88abe8eee64c9a",
+  "digest": "81a653eba9e72ed191dd6c9ac15f3f96e467b1958065bb9acf352af88fc15786",
   "url": "https://kubernetes-charts.storage.googleapis.com/elastic-stack-1.8.0.tgz"
 }
 {
@@ -12241,7 +12241,7 @@
 {
   "name": "graylog",
   "version": "1.2.0",
-  "digest": "3cfb5f79b95f42bb076cff63f55dfa7e16917387577ae059b21d57a76ce9326f",
+  "digest": "7be7011ff89491ae273536dce6de2aa7a05b19c3a443eab7ce0b5630825c24e3",
   "url": "https://kubernetes-charts.storage.googleapis.com/graylog-1.2.0.tgz"
 }
 {
@@ -13615,7 +13615,7 @@
 {
   "name": "janusgraph",
   "version": "0.2.1",
-  "digest": "c74bb0584997e5bc15d6997c77ae2234aae9d4c95297ceee20d2a823a0d08d99",
+  "digest": "ffacef436855f6fcb32a450698d5a0e4ecbe47c465754add6ab5a86c39c0432a",
   "url": "https://kubernetes-charts.storage.googleapis.com/janusgraph-0.2.1.tgz"
 }
 {
@@ -17323,7 +17323,7 @@
 {
   "name": "kube-ops-view",
   "version": "1.1.0",
-  "digest": "a6308eef7591ef28084ef94344d096a3789e81cf7602ae316a92fdbec80ee787",
+  "digest": "728530e3c22d72fd97ef3418d35439f38e0a31270d3cb1f869dc18f4326df83a",
   "url": "https://kubernetes-charts.storage.googleapis.com/kube-ops-view-1.1.0.tgz"
 }
 {
@@ -37981,7 +37981,7 @@
 {
   "name": "redmine",
   "version": "11.0.0",
-  "digest": "5b5751b88469173e60260b382b500e1b95e6734f6e3711d5cc93c5c81489c9a7",
+  "digest": "03e2a7eab1388508ea1b7923a3c26dfeb0568a6261e8dcf30d84c9f7ff94a883",
   "url": "https://kubernetes-charts.storage.googleapis.com/redmine-11.0.0.tgz"
 }
 {
@@ -39703,7 +39703,7 @@
 {
   "name": "sonarqube",
   "version": "2.1.3",
-  "digest": "4f4c81a2960753989732fd6620110269c6121b9f8e0c4ead86382fc4b121a972",
+  "digest": "ec5616978e4553187660668860d5a9016adff8d3d84b5ca1768972228da9819b",
   "url": "https://kubernetes-charts.storage.googleapis.com/sonarqube-2.1.3.tgz"
 }
 {
